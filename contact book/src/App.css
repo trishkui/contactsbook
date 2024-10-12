@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.contactinput{
+  margin:  5rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  
+}
+.firstname{
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+.lastname{
+  padding: 0.5rem;
+  margin-bottom: 3rem; 
+}
+.phone{
+  padding: 0.5rem;
+  margin-bottom: 3rem; 
+}
+.email{
+  padding: 0.5rem;
+  margin-bottom: 3rem; 
+}
+.addcontact{
+  cursor: pointer;
+  width: 20%; 
+  background-color: green;
+  color: white;
+  border-radius: 0.2rem;
+}
