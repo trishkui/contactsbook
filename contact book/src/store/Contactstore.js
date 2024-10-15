@@ -11,17 +11,26 @@ const useContactStore = create((set) => ({
 
     deleteContact: function(ContactId) {
         set((state) => {
-           
             const updatedContacts = state.Contacts.filter((currentContact) => {
-                return currentContact.id !== ContactId; 
+                return currentContact.id !== ContactId;
             });
-
-            return { Contacts: updatedContacts }; 
+            return { Contacts: updatedContacts };
         });
+    },
+
+    blockContact: function(ContactId) {
+        set((state) => ({
+            Contacts: state.Contacts.map((currentContact) =>
+                currentContact.id === ContactId
+                    ? { ...currentContact, blocked: !currentContact.blocked } // Toggle blocked state
+                    : currentContact
+            ),
+        }));
     },
 }));
 
 export default useContactStore;
+
 
   
 

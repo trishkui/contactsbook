@@ -17,7 +17,9 @@ function Contactlist() {
                     key={Contact.id}
                     id={Contact.id}
                     first_name={Contact.first_name} 
-                    last_name={Contact.last_name} phonenumber={Contact.phonenumber} emailaddress={Contact.emailaddress} />))
+                    last_name={Contact.last_name} phonenumber={Contact.phonenumber} emailaddress={Contact.emailaddress}
+                    blocked={Contact.blocked}
+                    />))
             }
 
         </section>
